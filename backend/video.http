@@ -1,0 +1,32 @@
+####
+POST http://localhost:3000/api/videos
+Content-Type: application/json
+
+{
+  "url":"https://www.youtube.com/watch?v=5NLW",
+  "title":"vidoe fazt 2",
+  "description":"cursos de typescript 2"
+}
+
+###
+GET  http://localhost:3000/api/videos
+
+
+####
+GET   http://localhost:3000/api/videos/5f8e7d938a8e0011f880f2b0
+
+
+
+
+###
+DELETE  http://localhost:3000/api/videos/5f8e7ee455aafa01b447befa
+
+### 
+PUT   http://localhost:3000/api/videos/5f8e7d938a8e0011f880f2b0/edit
+Content-Type: application/json
+
+{
+  "url":"https://www.youtube.com/watch?v=5NLWa6upmeU",
+  "title":"vidoe fazt 1",
+  "description":"cursos de typescript 1"
+}
